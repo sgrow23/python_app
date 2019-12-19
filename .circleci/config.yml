@@ -23,7 +23,8 @@ jobs:
             python3 tests.py
           filters:
             branches:
-              only: master
+              only: 
+                - master
       - store_artifacts:
           path: test-reports/
           destination: python_app
