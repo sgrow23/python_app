@@ -21,10 +21,9 @@ jobs:
           command: |
             . venv/bin/activate
             python3 tests.py
-          filters:
-            branches:
-              only: 
-                - master
+          branches:
+            only: 
+              - master
       - store_artifacts:
           path: test-reports/
           destination: python_app
